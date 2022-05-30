@@ -77,10 +77,10 @@ body{
     transform: translateY(0px);
     color: #0082CF;
 }
-.spanButton{
+#lastInputBox a{
     background: linear-gradient(120deg, #469E75, #23774A);    
     width: 100%;
-    display: inline-block;
+    display: block;
     padding: 12px 0px;
     border-radius: 15px;
     text-align: center;
@@ -90,7 +90,31 @@ body{
     font-weight: 600;
     font-size: 1.2em;
     transition: 0.5s; 
+    position: relative;
 }
-.spanButton:hover{
+#lastInputBox a:hover{
     background: linear-gradient(120deg,rgb(233, 146, 32) 0%, hsla(1, 92%, 47%, 1) 100%); 
+}
+.spanButton1{
+    position: absolute;
+    top: 13px;   
+    left: 100px; 
+    font-size: 1.2em;
+    color: white; 
+    transition: 0.5s;
+}
+#lastInputBox:hover .spanButton1{  
+    transform: translateY(-50px);  
+}
+.spanButton2{
+    position: absolute;
+    top: 13px;   
+    left: 100px; 
+    font-size: 1.2em;
+    color: white; 
+    transition: 0.5s;
+    transform: translateY(50px);
+}
+#lastInputBox:hover .spanButton2{  
+    transform: translateY(0px);   
 }
