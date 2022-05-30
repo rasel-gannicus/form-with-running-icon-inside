@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    background: #52796F;
+    background: linear-gradient(45deg, #2F3E46,#84A98C);
 }
 body::before{
     position: absolute;
@@ -18,8 +18,8 @@ body::before{
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(#FF5FC5,#CC0500);
-    clip-path: circle(30% at right 70%);
+    background: linear-gradient(#FF5FC5,#bc1b68);
+    clip-path: circle(15% at 73% 100%); 
 }
 body::after{
     position: absolute;
@@ -29,7 +29,7 @@ body::after{
     left: 0;
     right: 0;
     background: linear-gradient(#0E5298, #23AAF2);
-    clip-path: circle(20% at 10% 10%);
+    clip-path: circle(20% at 22% 0%); 
 }
 .container{
     border: 2px solid #ddd;
@@ -59,7 +59,7 @@ body::after{
     background: white;
     border: 2px solid #2A7E52; 
     padding: 5px 10px; 
-    border-radius: 5px; 
+    border-radius: 10px; 
 }
 .container .card .content{
     width: 100% ;
