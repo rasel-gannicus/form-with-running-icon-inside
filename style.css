@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    background: rgba(255,255,255,0.05);
+    background: #52796F;
 }
 body::before{
     position: absolute;
@@ -18,7 +18,7 @@ body::before{
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(#FF5FC5, #FF9C32);
+    background: linear-gradient(#FF5FC5,#CC0500);
     clip-path: circle(30% at right 70%);
 }
 body::after{
@@ -38,9 +38,10 @@ body::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255,255,255,0.25);
+    background: #0a7fbe11;
     z-index: 1;
     backdrop-filter: blur(10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.5);
 }
 .container .card{
     width: 400px;
@@ -73,6 +74,9 @@ body::after{
     transition: 0.3s; 
     font-size: 18px;
     background: transparent;
+}
+.container .card .content .inputBox input::placeholder{
+    color: white;
 }
 .container .card .content .inputBox input:focus{
     border: 2px solid #0082CF;
