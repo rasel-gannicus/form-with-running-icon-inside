@@ -8,6 +8,28 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background: rgba(255,255,255,0.05);
+}
+body::before{
+    position: absolute;
+    content: ' ';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#FF5FC5, #FF9C32);
+    clip-path: circle(30% at right 70%);
+}
+body::after{
+    position: absolute;
+    content: ' ';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#0E5298, #23AAF2);
+    clip-path: circle(20% at 10% 10%);
 }
 .container{
     border: 2px solid #ddd;
@@ -16,6 +38,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(255,255,255,0.25);
+    z-index: 1;
+    backdrop-filter: blur(10px);
 }
 .container .card{
     width: 400px;
@@ -49,6 +74,7 @@ body{
 .container .card .content .inputBox input:focus{
     border: 2px solid #0082CF;
 }
+
 .container .card .content .inputBox{
     position: relative;
     overflow: hidden;
