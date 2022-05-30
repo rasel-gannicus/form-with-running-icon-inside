@@ -11,16 +11,14 @@ body{
 }
 .container{
     border: 2px solid #ddd;
+    border-radius: 15px;
     width: 500px;
-    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container .card{
-    border: 2px solid #ddd;
     width: 400px;
-    height: 400px; 
     border-radius: 15px;
     position: relative;
     display: flex;
@@ -34,7 +32,6 @@ body{
     background: white;
 }
 .container .card .content{
-    border: 1px solid red;  
     width: 100% ;
 }
 .container .card .content .inputBox input{
