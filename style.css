@@ -77,3 +77,20 @@ body{
     transform: translateY(0px);
     color: #0082CF;
 }
+.spanButton{
+    background: linear-gradient(120deg, #469E75, #23774A);    
+    width: 100%;
+    display: inline-block;
+    padding: 12px 0px;
+    border-radius: 15px;
+    text-align: center;
+    
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: 0.5s; 
+}
+.spanButton:hover{
+    background: linear-gradient(120deg,rgb(233, 146, 32) 0%, hsla(1, 92%, 47%, 1) 100%); 
+}
