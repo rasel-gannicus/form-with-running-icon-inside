@@ -55,7 +55,7 @@ body{
     position: relative;
     overflow: hidden;
 }
-.container .card .content .inputBox .email1{
+.container .card .content .inputBox .span1{
     position: absolute;
     top: 16px;
     left: 15px;
@@ -63,6 +63,19 @@ body{
     color: rgba(0,0,0,0.5);  
     transition: 0.5s;
 }
-.container .card .content .inputBox input:focus ~ .email1{
+.container .card .content .inputBox input:focus ~ .span1{
     transform: translateY(-50px);
+}
+.container .card .content .inputBox .span2{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    font-size: 22px;  
+    color: rgba(0,0,0,0.5);  
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.container .card .content .inputBox input:focus ~ .span2{
+    transform: translateY(0px);
+    color: orangered;
 }
