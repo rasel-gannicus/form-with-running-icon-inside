@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 2px solid #ddd;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card{
+    border: 2px solid #ddd;
+    width: 400px;
+    height: 400px; 
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card h2{
+    position: absolute;
+    top: -17px; 
+    left: 30px; 
+    background: white;
+}
+.container .card .content{
+    border: 1px solid red;  
+    width: 100% ;
+}
+.container .card .content .inputBox input{
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    padding: 15px 45px;
+    border-radius: 15px;
+    border:2px solid #ddd;
+    transition: 0.3s; 
+    font-size: 18px;
+    background: transparent;
+}
+.container .card .content .inputBox input:focus{
+    border: 2px solid #0082CF;
+}
+.container .card .content .inputBox{
+    position: relative;
+    overflow: hidden;
+}
+.container .card .content .inputBox .email1{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    font-size: 22px;  
+    color: rgba(0,0,0,0.5);  
+    transition: 0.5s;
+}
+.container .card .content .inputBox input:focus ~ .email1{
+    transform: translateY(-50px);
+}
