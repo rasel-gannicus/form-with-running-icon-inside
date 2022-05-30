@@ -54,6 +54,7 @@ body{
 .container .card .content .inputBox{
     position: relative;
     overflow: hidden;
+    margin: 20px;
 }
 .container .card .content .inputBox .span1{
     position: absolute;
@@ -77,5 +78,5 @@ body{
 }
 .container .card .content .inputBox input:focus ~ .span2{
     transform: translateY(0px);
-    color: orangered;
+    color: #0082CF;
 }
