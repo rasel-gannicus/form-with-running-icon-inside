@@ -38,7 +38,7 @@ body::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0a7fbe11;
+    background: rgba(10, 127, 190, 0.123);
     z-index: 1;
     backdrop-filter: blur(10px);
     box-shadow: 0 20px 35px rgba(0,0,0,0.5);
